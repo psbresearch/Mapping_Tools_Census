@@ -5,7 +5,7 @@ library(tictoc)
 library(dplyr)
 library(gridExtra)
 
-
+# Please see ReadMe for required shapefiles.
 
 segment_file <- "candidate_segments_0814.csv"
 
@@ -134,11 +134,6 @@ map_data <- tract_base %>%
 				)
 
 
-
-
-# saveRDS(map_data, "map_data.RDS")
-
-# map_data <- readRDS("map_data.RDS")
 
 
 crs_lower48 <- "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
